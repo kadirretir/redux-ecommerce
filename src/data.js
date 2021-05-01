@@ -7,6 +7,7 @@ export const productData = [
         brand: "Asus",
         properties: [
             {
+                prop_id: 1,
                 d_3: false,
                 connection: "Display, DVI-D, HDMI",
                 memoryspeed: "7008 MHz",
@@ -34,6 +35,7 @@ export const productData = [
         brand: "Asus",
         properties: [
             {
+                prop_id: 2,
                 d_3: true,
                 connection: "Display, DVI-D, HDMI",
                 memoryspeed: "7008 MHz",
@@ -61,6 +63,7 @@ export const productData = [
         brand: "Asus",
         properties: [
             {
+                prop_id: 3,
                 d_3: false,
                 connection: "Display, DVI-D, HDMI",
                 memoryspeed: "6000 MHz",
@@ -88,6 +91,7 @@ export const productData = [
         brand: "MSI",
         properties: [
             {
+                prop_id: 4,
                 d_3: false,
                 connection: "Display, HDMI",
                 memoryspeed: "6008 MHz",
@@ -115,6 +119,7 @@ export const productData = [
         brand: "Asus",
         properties: [
             {
+                prop_id: 5,
                 d_3: false,
                 connection: "HDMI, DVI",
                 memoryspeed: "5012 MHz",
@@ -142,6 +147,7 @@ export const productData = [
         brand: "MSI",
         properties: [
             {
+                prop_id: 6,
                 d_3: false,
                 connection: "Analog (D-Sub), HDMI, DVI-D",
                 memoryspeed: "2000 MHz",
@@ -169,6 +175,7 @@ export const productData = [
         brand: "Asus",
         properties: [
             {
+                prop_id: 7,
                 d_3: true,
                 connection: "HDMI",
                 memoryspeed: "6001 MHz",
@@ -196,6 +203,7 @@ export const productData = [
         brand: "Asus",
         properties: [
             {
+                prop_id: 8,
                 d_3: true,
                 connection: "HDMI, DVI-D, Display",
                 memoryspeed: "7008 MHz",
@@ -223,6 +231,7 @@ export const productData = [
         brand: "Asus",
         properties: [
             {
+                prop_id: 9,
                 d_3: true,
                 connection: "DVI-D",
                 memoryspeed: "6008 MHz",
@@ -250,6 +259,7 @@ export const productData = [
         brand: "Asus",
         properties: [
             {
+                prop_id: 10,
                 d_3: true,
                 connection: "DVI-D",
                 memoryspeed: "6001 MHz",

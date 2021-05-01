@@ -32,11 +32,12 @@ export const reducer = (state = INITIAL_STATE, action) => {
                 changeHamburger: !state.changeHamburger
             }
         case "SCREEN_RESIZE":
-            if(action.screenWidth <= 768) {
-                return {...state, changeHamburger: state.changeHamburger = false}
-            } else {
-                return {...state, changeHamburger: state.changeHamburger = true}
-            }
+           if(action.screenWidth <= 768) {
+               return {...state, changeHamburger: state.changeHamburger = false}
+           } else {
+               return {...state, changeHamburger: state.changeHamburger = true}
+           }
+           
             
         default:
             return state;

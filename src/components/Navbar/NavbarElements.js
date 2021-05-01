@@ -6,6 +6,7 @@ export const Nav = styled.header`
 width: 100%;
 min-height: 5rem;
 background-color: var(--primary-color);
+grid-area: header;
 `
 
 
