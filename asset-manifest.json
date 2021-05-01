@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/redux-ecommerce/static/css/main.d7de9aec.chunk.css",
-    "main.js": "/redux-ecommerce/static/js/main.504612f2.chunk.js",
-    "main.js.map": "/redux-ecommerce/static/js/main.504612f2.chunk.js.map",
+    "main.css": "/redux-ecommerce/static/css/main.4797a29b.chunk.css",
+    "main.js": "/redux-ecommerce/static/js/main.57526f02.chunk.js",
+    "main.js.map": "/redux-ecommerce/static/js/main.57526f02.chunk.js.map",
     "runtime-main.js": "/redux-ecommerce/static/js/runtime-main.a55e7fe1.js",
     "runtime-main.js.map": "/redux-ecommerce/static/js/runtime-main.a55e7fe1.js.map",
-    "static/js/2.20f0d7ad.chunk.js": "/redux-ecommerce/static/js/2.20f0d7ad.chunk.js",
-    "static/js/2.20f0d7ad.chunk.js.map": "/redux-ecommerce/static/js/2.20f0d7ad.chunk.js.map",
+    "static/js/2.e28be152.chunk.js": "/redux-ecommerce/static/js/2.e28be152.chunk.js",
+    "static/js/2.e28be152.chunk.js.map": "/redux-ecommerce/static/js/2.e28be152.chunk.js.map",
     "index.html": "/redux-ecommerce/index.html",
-    "static/css/main.d7de9aec.chunk.css.map": "/redux-ecommerce/static/css/main.d7de9aec.chunk.css.map",
-    "static/js/2.20f0d7ad.chunk.js.LICENSE.txt": "/redux-ecommerce/static/js/2.20f0d7ad.chunk.js.LICENSE.txt"
+    "static/css/main.4797a29b.chunk.css.map": "/redux-ecommerce/static/css/main.4797a29b.chunk.css.map",
+    "static/js/2.e28be152.chunk.js.LICENSE.txt": "/redux-ecommerce/static/js/2.e28be152.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a55e7fe1.js",
-    "static/js/2.20f0d7ad.chunk.js",
-    "static/css/main.d7de9aec.chunk.css",
-    "static/js/main.504612f2.chunk.js"
+    "static/js/2.e28be152.chunk.js",
+    "static/css/main.4797a29b.chunk.css",
+    "static/js/main.57526f02.chunk.js"
   ]
 }
