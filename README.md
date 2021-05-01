@@ -1,4 +1,5 @@
 REDUX Alışveriş Sepeti Uygulaması
 
 
-![siteimage](https://ibb.co/tzGvVQK)
+![Uploading kadirretir.github.io_redux-ecommerce_.png…]()
+
