@@ -61,14 +61,62 @@ footer, section::before {
     transform: rotate(-45deg) translate(-9px, 6px);
   }
   
-  .change .bar2 {opacity: 0;}
+.change .bar2 {opacity: 0;}
   
-  .change .bar3 {
+.change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
   }
 
 
+/**  SHOPPING LIST STYLES  **/
+
+.shoppingList {
+position: absolute;
+top: 2.7rem;
+left: -23rem;
+min-width: 50rem;
+min-height: 40rem;
+border-radius: 1rem;
+visibility: hidden;
+opacity: 0;
+transition: visibility 0s, opacity 0.2s ease-in-out;
+background: white;
+overflow: hidden;
+z-index: 150;
+}
+ /** HOVER ON SHOPPING CART  **/  
+.showShoppingList:hover .shoppingList {
+    visibility: visible;
+    opacity: 1;
+}
 
 
 
+/** SHOPPING CARD RESPONSIVENESS  **/
+@media screen and (max-width: 526px) {
+    .shoppingList {
+        left: -17rem;
+        min-width: 40rem;
+        min-height: 20rem;
+    }
+
+}
+
+@media screen and (max-width: 411px) {
+    .shoppingList {
+        left: -13rem;
+        min-width: 36rem;
+        min-height: 20rem;
+    }
+}
+
+    
+@media screen and (max-width: 375px) {
+    .shoppingList {
+        left: -8rem;
+        min-width: 31rem;
+        min-height: 20rem;
+    }
+
+}

@@ -4,8 +4,7 @@ import { addItemToCart, removeItemFromCart } from './card-utils';
 const INITIAL_STATE = {
     data: productData,
     inCart: [],
-    changeHamburger: false,
- 
+    changeHamburger: false
 }
 
 export const reducer = (state = INITIAL_STATE, action) => {

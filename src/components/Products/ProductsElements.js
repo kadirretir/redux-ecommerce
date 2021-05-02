@@ -110,6 +110,7 @@ cursor: pointer;
 background-color: var(--fourth-color);
 color: var(--primary-color);
 transition: all 0.2s ease-in-out;
+position:relative;
 &:hover {
     color: var(--primary-color);
     background-color: var(--third-color);

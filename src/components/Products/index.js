@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {
     ProductSection,
     ProductContainer,
@@ -15,13 +15,23 @@ import {
     Button
 } from './ProductsElements';
 import { useSelector, useDispatch } from 'react-redux';
-import {addcart} from '../../actions';
+import { addcart } from '../../actions';
 
 const Products = () => {
     const productList = useSelector(state => state.data);
-    const incart = useSelector(state => state.inCart);
     const dispatch = useDispatch();
-    console.log(incart);
+
+    // SCROLL TO TOP WHEN ADDING AN ITEM TO THE CART
+    useEffect(() => {
+        document.querySelectorAll("#toTop").forEach(singleButton =>
+            singleButton.addEventListener("click", () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            }))
+    }, [])
+
     return (
         <ProductSection>
             <ProductContainer>
@@ -47,12 +57,13 @@ const Products = () => {
                                                     </React.Fragment>
                                                 );
                                             })}
-
                                         </MiddleLeft>
                                         <H3>{`₺${product.price}`}</H3>
                                     </MiddleGrid>
-                                    <Button 
-                                    onClick={() => dispatch(addcart(product))}>Sepete Ekle</Button>
+                                    <Button
+                                        id="toTop"
+                                        className="btn btn-default waves-effect waves-light"
+                                        onClick={() => dispatch(addcart(product))}>Sepete Ekle</Button>
                                 </CardContent>
                             </Card>
                         );

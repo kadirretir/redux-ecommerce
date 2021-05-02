@@ -2,7 +2,7 @@
 export const addcart = (quantity) => {
     return {
         type: "ADD_TO_CART",
-        payload: quantity
+        payload: quantity,
     }
 };
 
@@ -21,9 +21,10 @@ export const sepettenCikar = (id) => {
     }
 };
 
-export const hamburgerAction = () => {
+export const hamburgerAction = (click) => {
     return {
-        type: "CHANGE_HAMBURGER"
+        type: "CHANGE_HAMBURGER",
+        payload: click
     }
 };
 
