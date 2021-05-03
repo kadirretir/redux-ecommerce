@@ -1,11 +1,12 @@
 import './App.css';
 import './Button.css';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import AsideMenu from './components/AsideMenu';
 import Hero from './components/Hero';
 import Products from './components/Products';
 import styled from 'styled-components';
+import Basket from './components/Basket';
 
 const RootDiv = styled.div`
     display: grid;
@@ -31,8 +32,27 @@ function App() {
         <Router>
           <Navbar />
           <AsideMenu />
-          <Hero style={{transition: "width 2s"}} />
-          <Products />
+          <Route path="/" exact render={() => {
+            return (
+              <>
+                <Hero />
+                <Products />
+              </>
+            )
+          }}
+          />
+
+          <Route path="/sepet" exact render={() => {
+            return (
+              <>
+                <Basket />
+              </>
+            )
+          }}
+          />
+
+
+
         </Router>
       </RootDiv>
     </>

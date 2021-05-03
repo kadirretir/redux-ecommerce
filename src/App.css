@@ -114,8 +114,8 @@ z-index: 150;
     
 @media screen and (max-width: 375px) {
     .shoppingList {
-        left: -8rem;
-        min-width: 31rem;
+        left: -10rem;
+        min-width: 25rem;
         min-height: 20rem;
     }
 

@@ -89,7 +89,7 @@ return (
                 </Logo>
             <NavRight>
                 <ShoppingWrapper className="showShoppingList" data-attr={inCart.length}>
-                    <ShoppingLink to="/mycard">
+                    <ShoppingLink to="/sepet">
                         <FiShoppingCart style={{ fontSize: "2.7rem", color: "var(--secondary-color)" }} />
                     </ShoppingLink>
                     <ShoppingList isProductIn={(inCart.length > 0)} className="shoppingList">
@@ -99,7 +99,6 @@ return (
                 <NavList>
                     <NavLinks to="/">Anasayfa</NavLinks>
                     <NavLinks to="/sepet">Sepetim</NavLinks>
-                    <NavLinks to="/urunler">Ürünler</NavLinks>
                 </NavList>
             </NavRight>
         </NavContainer>
