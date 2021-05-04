@@ -1,6 +1,6 @@
 import './App.css';
 import './Button.css';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import {Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import AsideMenu from './components/AsideMenu';
 import Hero from './components/Hero';
@@ -28,10 +28,11 @@ const RootDiv = styled.div`
 function App() {
   return (
     <>
-      <RootDiv >
-        <Router>
+      <RootDiv>
           <Navbar />
           <AsideMenu />
+
+          <Switch>
           <Route path="/" exact render={() => {
             return (
               <>
@@ -51,9 +52,8 @@ function App() {
           }}
           />
 
-
-
-        </Router>
+      </Switch>
+      
       </RootDiv>
     </>
   );

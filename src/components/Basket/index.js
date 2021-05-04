@@ -15,6 +15,7 @@ import {
     Price,
     Cards,
 } from './BasketElements';
+
 import { MdRemoveShoppingCart } from 'react-icons/md';
 import { sepettenCikar } from '../../actions';
 import { useSelector, useDispatch } from 'react-redux';
