@@ -11,9 +11,9 @@ let store = createStore(reducer,
 
 ReactDOM.render(
   <BrowserRouter basename="/redux-ecommerce">
-  <Provider store={store}>
-    <App />
-  </Provider>
+    <Provider store={store}>
+      <App />
+    </Provider>
   </BrowserRouter>,
   document.getElementById('root')
 );

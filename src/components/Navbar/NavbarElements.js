@@ -118,7 +118,9 @@ border-radius: 0.5rem;
 display: grid;
 grid-template-areas: 'img info price';
 grid-template-columns: 50% 40% 10%;
-
+@media screen and (max-width: 768px) {
+  grid-template-columns: 40% 40% 20%;
+}
 `
 
 
@@ -174,6 +176,9 @@ margin-bottom: ${props => props.isProductIn ? "3rem" : "0"};
 
 export const ProductInfo = styled.span`
 font-size: 1.2rem;
+@media screen and (max-width: 768px) {
+  font-size: 1.1rem;
+}
 `
 
 
