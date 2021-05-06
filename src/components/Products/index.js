@@ -18,7 +18,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { addcart } from '../../actions';
 
 const Products = () => {
-    const productList = useSelector(state => state.data);
+    const filteredItems = useSelector(state => state.filteredItems);
     const dispatch = useDispatch();
 
     // SCROLL TO TOP WHEN ADDING AN ITEM TO THE CART
@@ -36,7 +36,7 @@ const Products = () => {
         <ProductSection>
             <ProductContainer>
                 <Cards>
-                    {productList.map(product => {
+                    {filteredItems.map(product => {
 
                         return (
                             <Card key={product.id}>

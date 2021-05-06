@@ -4,7 +4,9 @@ import { addItemToCart, removeItemFromCart } from './card-utils';
 const INITIAL_STATE = {
     data: productData,
     inCart: [],
-    changeHamburger: false
+    changeHamburger: false,
+    radioInItem: false,
+    filteredItems: productData
 }
 
 export const reducer = (state = INITIAL_STATE, action) => {
@@ -31,13 +33,16 @@ export const reducer = (state = INITIAL_STATE, action) => {
                 changeHamburger: !state.changeHamburger
             }
         case "SCREEN_RESIZE":
-           if(action.screenWidth <= 768) {
-               return {...state, changeHamburger: state.changeHamburger = false}
-           } else {
-               return {...state, changeHamburger: state.changeHamburger = true}
-           }
-           
-            
+            if (action.screenWidth <= 768) {
+                return { ...state, changeHamburger: state.changeHamburger = false }
+            } else {
+                return { ...state, changeHamburger: state.changeHamburger = true }
+            }
+        case "FILTERED_RADIO":
+            const filteredByRadio = state.data.filter(item => item ?
+                item.brand.toLowerCase().includes(action.payload) : item);
+            return { ...state, radioInItem: state.radioInItem = action.payload, filteredItems: filteredByRadio }
+
         default:
             return state;
     }
@@ -45,5 +50,3 @@ export const reducer = (state = INITIAL_STATE, action) => {
 }
 
 export default reducer;
-
-/* screenWidth: typeof window === 'object' ? window.innerWidth : null */

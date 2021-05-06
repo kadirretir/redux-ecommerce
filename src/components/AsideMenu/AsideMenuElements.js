@@ -4,7 +4,7 @@ export const SideNav = styled.div`
     height: 100%; 
     width: 50%;
     position: fixed; 
-    z-index: 1; 
+    z-index: 151; 
     top: ${props => props.sendHeight ? "0" : "5rem"};
     left: ${props => props.showMenu ? "0" : "-50%"};
     background-color: var(--secondary-color); 

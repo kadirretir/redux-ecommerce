@@ -33,7 +33,16 @@ export const screenResize = (width) => {
         type: "SCREEN_RESIZE",
         screenWidth: width
     };
-}
+};
+
+export const getFilteredbyRadio = (radioin) => {
+    return {
+        type: "FILTERED_RADIO",
+        payload: radioin
+    }
+  };
+
+
 
 
 
